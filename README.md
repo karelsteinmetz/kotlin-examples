@@ -1,3 +1,3 @@
-# kotlin-examples
+# kotlin-samples
 
 ## M11
