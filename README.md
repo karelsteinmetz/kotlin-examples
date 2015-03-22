@@ -1,6 +1,7 @@
 # kotlin-samples
 
 ## M11
+* Multiple constructors - super(), this()
 * Init - initializer block
 
 ## Dependencies
