@@ -1,9 +1,16 @@
 package org.ks.kotlin.samples
 
+import org.junit.Before
 import org.junit.Test
 import org.ks.kotlinfluentassertions.core.should
 
 public class ObjectWithCompanionTest {
+
+    Before
+    fun before() {
+        ObjectWithCompanion.Singleton.value = 0
+        ObjectWithCompanion.value = 0L
+    }
 
     Test
     fun addsIncrementToSingletonValue() {
