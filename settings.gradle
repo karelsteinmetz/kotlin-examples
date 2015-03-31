@@ -2,3 +2,5 @@ rootProject.name = 'kotlin-samples'
 
 include 'kotlin-samples-m11'
 
+include 'kotlin-samples-m10'
+
