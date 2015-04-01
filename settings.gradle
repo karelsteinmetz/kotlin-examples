@@ -4,3 +4,5 @@ include 'kotlin-samples-m11'
 
 include 'kotlin-samples-m10'
 
+include 'kotlin-samples-base-syntax'
+
