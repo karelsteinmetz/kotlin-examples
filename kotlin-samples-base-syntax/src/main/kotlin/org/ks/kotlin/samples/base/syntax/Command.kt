@@ -13,7 +13,7 @@ trait DtoHolder<out T> {
 abstract class Command<T>(override var dto: T) : Routable, DtoHolder<T> {
 }
 
-class CreateWorkflowCommnad(var workflow: WorkflowDto? = null): Command<WorkflowDto>(workflow!!) {
+class CreateWorkflowCommand(var workflow: WorkflowDto? = null): Command<WorkflowDto>(workflow!!) {
     override val routingKey: String
         get() = "workflow.command"
 }

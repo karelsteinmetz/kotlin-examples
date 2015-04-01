@@ -8,7 +8,7 @@ public class CommandTest {
     Test
     fun hasWorkflowDto() {
         val w = WorkflowDto(1L, listOf<ModuleDto>(), listOf<ConnectionDto>())
-        val command = CreateWorkflowCommnad(w)
+        val command = CreateWorkflowCommand(w)
 
         command.dto.should().be(w)
     }
