@@ -1,0 +1,45 @@
+// Post-formatted for better "readability", removed some un-interesting constructs
+// Lambda in Kotlin constructor is directly in Java constructor.
+// Referenced lambda (e.g. in function) is using abstract FunctionX class with invoke(<X params>)
+
+import kotlin.Function1;
+// ...
+
+public final class Lambdas {
+
+    public static final KClass $kotlinClass = Reflection.createKotlinClass(org/ks/kotlin/samples/base/bytecode/Lambdas);
+
+    private final Integer constructorLambda[];
+
+    public Lambdas()
+    {
+        byte byte0 = 5;
+        Lambdas lambdas = this;
+        Integer ainteger[] = new Integer[byte0];
+        int j = 0;
+        int k = byte0 - 1;
+        if(j <= k)
+            do {
+                int i = j;
+                int l = j;
+                Integer ainteger1[] = ainteger;
+                Integer integer = Integer.valueOf(42 * i);
+                ainteger1[l] = integer;
+                if(j == k)
+                    break;
+                j++;
+            } while(true);
+        Object aobj[] = (Object[])ainteger;
+        lambdas.constructorLambda = (Integer[])aobj;
+    }
+
+    public final Integer[] getConstructorLambda() {
+            return constructorLambda;
+    }
+
+    public final void inFunction(Function1 funParamLambda) {
+        Intrinsics.checkParameterIsNotNull(funParamLambda, "funParamLambda");
+        String _tmp = (String)funParamLambda.invoke(Integer.valueOf(42));
+    }
+}
+

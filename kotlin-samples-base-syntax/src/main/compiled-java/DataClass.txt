@@ -1,0 +1,58 @@
+// Post-formatted for better "readability", removed some un-interesting constructs
+// Data class contains pre-generated getters/setters and toString, equals, hashCode, copy methods
+
+public final class DataClass {
+
+    public static final KClass $kotlinClass = Reflection.createKotlinClass(org / ks / kotlin / samples / base / bytecode / DataClass);
+    private final String normalProperty;
+    private final int propertyWithDefault;
+
+    public DataClass(String normalProperty, int propertyWithDefault) {
+        Intrinsics.checkParameterIsNotNull(normalProperty, "normalProperty");
+        super();
+        this.normalProperty = normalProperty;
+        this.propertyWithDefault = propertyWithDefault;
+    }
+
+    public DataClass(String s, int i, int j, DefaultConstructorMarker defaultconstructormarker) {
+        if ((j & 2) != 0)
+            i = 42;
+        this(s, i);
+    }
+
+    public final String getNormalProperty() {
+        return normalProperty;
+    }
+
+    public final int getPropertyWithDefault() {
+        return propertyWithDefault;
+    }
+
+    public final DataClass copy(String normalProperty, int propertyWithDefault) {
+        Intrinsics.checkParameterIsNotNull(normalProperty, "normalProperty");
+        return new DataClass(normalProperty, propertyWithDefault);
+    }
+
+    public String toString() {
+        return (new StringBuilder()).append("DataClass(normalProperty=").append(normalProperty).append(", propertyWithDefault=").append(propertyWithDefault).append(")").toString();
+    }
+
+    public boolean equals(Object obj) {
+        label0: {
+            if (this != obj) {
+                if (!(obj instanceof DataClass))
+                    break label0;
+                DataClass dataclass = (DataClass) obj;
+                if (!Intrinsics.areEqual(normalProperty, dataclass.normalProperty) || (propertyWithDefault != dataclass.propertyWithDefault))
+                    break label0;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    public int hashCode() {
+        // ... ugly code ...
+    }
+}
+

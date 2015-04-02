@@ -1,0 +1,29 @@
+// Post-formatted for better "readability", removed some un-interesting constructs
+// Extension generates an "extension class" with static method that accepts original object which is directly called in case of its usage
+
+public final class BytecodePackage {
+
+    public static final KPackage $kotlinPackage = Reflection.createKotlinPackage(org/ks/kotlin/samples/base/bytecode/BytecodePackage);
+
+    public static final String getResult() {
+        class Extension.b1822dd7 {
+
+            static final String result = dummize("Kotlin");
+
+            public static final String dummize(String $receiver) {
+                Intrinsics.checkParameterIsNotNull($receiver, "$receiver");
+                return (new StringBuilder()).append("dummy ").append($receiver).toString();
+            }
+
+            public static final String getResult() {
+                return result;
+            }
+        }
+
+        return Extension.b1822dd7.getResult();
+    }
+
+    public static final String dummize(String $receiver) {
+        return Extension.b1822dd7.dummize($receiver);
+    }
+}

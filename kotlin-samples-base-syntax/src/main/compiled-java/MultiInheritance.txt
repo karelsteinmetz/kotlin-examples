@@ -1,0 +1,52 @@
+// Post-formatted for better "readability", removed some un-interesting constructs
+// For every trait, one interface and one class with (eventual) implementation is generated.
+
+Trait1.class:
+public interface Trait1 {
+
+    public static final KClass $kotlinClass = Reflection.createKotlinClass(org/ks/kotlin/samples/base/bytecode/Trait1);
+
+    public abstract void abstractMethod();
+}
+
+Trait1$$TImpl.class
+public final class {
+}
+
+
+Trait2.class:
+public interface Trait2 {
+
+    public static final KClass $kotlinClass = Reflection.createKotlinClass(org/ks/kotlin/samples/base/bytecode/Trait2);
+
+    public abstract void implementedMethod();
+}
+
+Trait2$$TImpl.class
+public final class {
+
+    public static void implementedMethod(Trait2 $this) {
+        IoPackage.println("implementation in trait");
+    }
+}
+
+
+MultiClass.class:
+public final class MultiClass implements Trait1, Trait2 {
+
+    public static final KClass $kotlinClass = Reflection.createKotlinClass(org/ks/kotlin/samples/base/bytecode/MultiClass);
+
+    public MultiClass() {}
+
+    public void abstractMethod() {
+        IoPackage.println("implemented abstract method");
+    }
+
+    public void implementedMethod() {
+        Trait2..TImpl.implementedMethod(this);
+    }
+}
+
+
+
+
