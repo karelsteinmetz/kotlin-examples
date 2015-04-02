@@ -8,6 +8,7 @@ For more examples see http://kotlinlang.org/docs/reference/coding-conventions.ht
 * Kotlin class - declarations etc.
 * Delegates
 * StringBuilder
+* Lambda
 
 ## M10
 * Declaration - site variance
