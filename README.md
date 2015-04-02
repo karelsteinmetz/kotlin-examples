@@ -19,6 +19,7 @@ For more examples see http://kotlinlang.org/docs/reference/coding-conventions.ht
 * Init - initializer block
 * Companion - class object has been deprecated
 * Labeled Returns in Lambdas
+* Reflection - properties of class and references
 
 ## Dependencies
 * kotlin-fluent-assertions - needs to be compiled into local repository

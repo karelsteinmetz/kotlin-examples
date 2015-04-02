@@ -1,1 +1,5 @@
 description = "Module which contains Kotlin samples in M11."
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
