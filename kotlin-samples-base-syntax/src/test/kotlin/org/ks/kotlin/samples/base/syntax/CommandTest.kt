@@ -1,13 +1,21 @@
 package org.ks.kotlin.samples.base.syntax
 
+import org.junit.Before
 import org.junit.Test
 import org.ks.kotlinfluentassertions.core.should
+import kotlin.properties.Delegates
 
 public class CommandTest {
 
+    var w: WorkflowDto by Delegates.notNull()
+
+    Before
+    fun before() {
+        w = WorkflowDto(1L, listOf<ModuleDto>(), listOf<ConnectionDto>())
+    }
+
     Test
     fun hasWorkflowDto() {
-        val w = WorkflowDto(1L, listOf<ModuleDto>(), listOf<ConnectionDto>())
         val command = CreateWorkflowCommand(w)
 
         command.dto.should().be(w)
@@ -15,8 +23,6 @@ public class CommandTest {
 
     Test
     fun dataClassCanBeCopied() {
-        val w = WorkflowDto(1L, listOf<ModuleDto>(), listOf<ConnectionDto>())
-
         println(w)
 
         val w2 = w.copy(w.id, w.modules, w.connections)
@@ -30,8 +36,6 @@ public class CommandTest {
 
     Test
     fun dataClassCanBeUsedToMultiDeclarations() {
-        val w = WorkflowDto(1L, listOf<ModuleDto>(), listOf<ConnectionDto>())
-
         val (id, modules, connections) = w
 
         id.should().be(1L)
@@ -44,8 +48,6 @@ public class CommandTest {
 
     Test
     fun extensionPrintsToConsole() {
-        val w = WorkflowDto(1L, listOf<ModuleDto>(), listOf<ConnectionDto>())
-
         CreateWorkflowCommand(w)
             .printToConsole()
     }
