@@ -41,4 +41,12 @@ public class CommandTest {
         val (id2) = w
         id2.should().be(1L)
     }
+
+    Test
+    fun extensionPrintsToConsole() {
+        val w = WorkflowDto(1L, listOf<ModuleDto>(), listOf<ConnectionDto>())
+
+        CreateWorkflowCommand(w)
+            .printToConsole()
+    }
 }

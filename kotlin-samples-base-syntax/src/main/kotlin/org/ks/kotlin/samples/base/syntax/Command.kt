@@ -18,6 +18,10 @@ class CreateWorkflowCommand(var workflow: WorkflowDto? = null): Command<Workflow
         get() = "workflow.command"
 }
 
+internal fun CreateWorkflowCommand.printToConsole(): Unit {
+    println(this)
+}
+
 data class WorkflowDto(var id: Long,
                        var modules: Iterable<ModuleDto>,
                        var connections: Iterable<ConnectionDto>)
