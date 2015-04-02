@@ -1,4 +1,6 @@
 # kotlin-samples
+# Overview
+This project was created for presentation purposes.
 
 ## Base syntax
 * Kotlin class - declarations etc.
