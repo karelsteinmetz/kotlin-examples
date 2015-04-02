@@ -4,6 +4,7 @@ This project was created for presentation purposes.
 For more examples see http://kotlinlang.org/docs/reference/coding-conventions.html
 
 ## Base syntax
+* Bytecode
 * Kotlin class - declarations etc.
 * Delegates
 * StringBuilder
