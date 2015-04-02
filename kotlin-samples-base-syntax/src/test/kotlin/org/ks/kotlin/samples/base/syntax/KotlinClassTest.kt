@@ -5,7 +5,7 @@ import org.junit.Test
 import org.ks.kotlinfluentassertions.core.should
 import kotlin.properties.Delegates
 
-public class CommandTest {
+public class KotlinClassTest {
 
     var w: WorkflowDto by Delegates.notNull()
 
