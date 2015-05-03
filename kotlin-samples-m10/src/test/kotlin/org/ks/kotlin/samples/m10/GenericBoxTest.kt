@@ -1,8 +1,7 @@
 package org.ks.kotlin.samples.m10
 
+import cz.krlst.kotlin.fluentassertions.core.should
 import org.junit.Test
-import org.ks.kotlinfluentassertions.core.should
-import kotlin.test.assertEquals
 
 public class GenericBoxTest {
 

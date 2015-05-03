@@ -38,6 +38,6 @@ subprojects {
     dependencies {
         compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
         testCompile 'junit:junit:4.11'
-        testCompile 'org.ks.kotlinfluentassertions:kotlin-fluent-assertions-core:0.0.1.0-SNAPSHOT'
+        testCompile 'cz.krlst.kotlin.fluentassertions:kotlin-fluent-assertions-core:0.0.1.0-SNAPSHOT'
     }
 }

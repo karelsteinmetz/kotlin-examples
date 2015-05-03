@@ -1,9 +1,9 @@
 package org.ks.kotlin.samples.base.syntax
 
+import cz.krlst.kotlin.fluentassertions.core.should
 import org.junit.Test
 import org.junit.experimental.runners.Enclosed
 import org.junit.runner.RunWith
-import org.ks.kotlinfluentassertions.core.should
 import kotlin.properties.Delegates
 import kotlin.test.failsWith
 

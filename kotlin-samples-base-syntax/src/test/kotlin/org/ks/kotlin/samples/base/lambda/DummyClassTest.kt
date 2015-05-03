@@ -1,7 +1,7 @@
 package org.ks.kotlin.samples.base.lambda
 
+import cz.krlst.kotlin.fluentassertions.core.should
 import org.junit.Test
-import org.ks.kotlinfluentassertions.core.should
 
 public class DummyClassTest {
 

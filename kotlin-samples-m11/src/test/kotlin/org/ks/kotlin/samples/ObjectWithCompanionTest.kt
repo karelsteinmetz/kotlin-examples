@@ -1,8 +1,8 @@
 package org.ks.kotlin.samples
 
+import cz.krlst.kotlin.fluentassertions.core.should
 import org.junit.Before
 import org.junit.Test
-import org.ks.kotlinfluentassertions.core.should
 
 public class ObjectWithCompanionTest {
 
